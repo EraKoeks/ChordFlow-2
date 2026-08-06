@@ -7,6 +7,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:3783311909:android:715da45885e86c70a9f5cc",
+        "android_client_info": {
+          "package_name": "com.erakoeks.chordflow2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6-UEHGtfKFt_osbWVGofesGvebX5QZiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:3783311909:android:c82684ed09aaad56a9f5cc",
         "android_client_info": {
           "package_name": "com.erastudios.chordflow2"

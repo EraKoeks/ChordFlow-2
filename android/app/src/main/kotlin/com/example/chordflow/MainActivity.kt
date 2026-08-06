@@ -1,4 +1,4 @@
-package com.example.chordflow
+package com.erakoeks.chordflow2
 
 import io.flutter.embedding.android.FlutterActivity
 

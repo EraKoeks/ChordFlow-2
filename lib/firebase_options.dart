@@ -52,12 +52,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyB6-UEHGtfKFt_osbWVGofesGvebX5QZiI',
-    appId: '1:3783311909:android:9b6f91e402b71424a9f5cc',
+    appId: '1:3783311909:android:715da45885e86c70a9f5cc',
     messagingSenderId: '3783311909',
     projectId: 'chordflow2',
     storageBucket: 'chordflow2.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyChwsaM_KQb6YNIKstgx10758DoqmfXgZs',
     appId: '1:3783311909:ios:34336adf5f051f20a9f5cc',
@@ -66,7 +65,6 @@ class DefaultFirebaseOptions {
     storageBucket: 'chordflow2.firebasestorage.app',
     iosBundleId: 'com.example.chordflow',
   );
-
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyChwsaM_KQb6YNIKstgx10758DoqmfXgZs',
     appId: '1:3783311909:ios:34336adf5f051f20a9f5cc',
