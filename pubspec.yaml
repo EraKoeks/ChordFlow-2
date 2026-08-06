@@ -1,0 +1,37 @@
+name: chordflow
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.6
+  uuid: ^4.6.0
+  google_fonts: ^8.2.1
+  shared_preferences: ^2.5.5
+  file_picker: 10.3.8
+  share_plus: ^12.0.2
+  pdf: ^3.12.0
+  printing: ^5.15.0
+
+  firebase_core: ^4.13.0
+  firebase_auth: ^6.5.6
+  cloud_firestore: ^6.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
