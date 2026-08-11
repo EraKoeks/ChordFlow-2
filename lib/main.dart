@@ -1,5 +1,8 @@
+import 'package:chordflow/services/ai_prompt_service.dart';
+import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -18,8 +21,18 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
+  await FirebaseAppCheck.instance.activate(
+    providerAndroid: kDebugMode
+        ? const AndroidDebugProvider()
+        : const AndroidPlayIntegrityProvider(),
+    providerApple: kDebugMode
+        ? const AppleDebugProvider()
+        : const AppleAppAttestWithDeviceCheckFallbackProvider(),
+  );
+
   await Hive.initFlutter();
   await StorageService.initialize();
+  await AiPromptService.initialize();
 
   final savedThemeMode =
   await ThemeService.loadThemeMode();
@@ -69,7 +82,7 @@ class _ChordFlowAppState
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ChordFlow',
+      title: 'ChordFlow 2',
       debugShowCheckedModeBanner: false,
       themeMode: _themeMode,
       theme: _buildLightTheme(),

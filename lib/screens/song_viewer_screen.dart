@@ -10,6 +10,7 @@ import '../utils/chord_transposer.dart';
 import '../utils/chordpro_parser.dart';
 import 'song_editor_screen.dart';
 import 'performance_screen.dart';
+import 'ai_assistant_screen.dart';
 import '../services/song_pdf_service.dart';
 
 class SongViewerScreen extends StatefulWidget {
@@ -218,6 +219,19 @@ class _SongViewerScreenState extends State<SongViewerScreen> {
     }
   }
 
+  Future<void> _openAiAssistant() async {
+    _stopAutoScroll();
+
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => AiAssistantScreen(
+          song: _song,
+        ),
+      ),
+    );
+  }
+
   void _toggleControls() {
     setState(() {
       _showControls = !_showControls;
@@ -282,6 +296,13 @@ class _SongViewerScreenState extends State<SongViewerScreen> {
           ],
         ),
         actions: [
+          IconButton(
+            tooltip: 'AI Assistant',
+            onPressed: _openAiAssistant,
+            icon: const Icon(
+              Icons.smart_toy_outlined,
+            ),
+          ),
           PopupMenuButton<String>(
             tooltip: 'Exporteren',
             onSelected: (value) {
@@ -891,17 +912,21 @@ class _SectionHeader extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 10),
-          Text(
-            title,
-            style: Theme.of(context)
-                .textTheme
-                .titleMedium
-                ?.copyWith(
-              fontWeight: FontWeight.bold,
-              color: Theme.of(context)
-                  .colorScheme
-                  .primary,
-              letterSpacing: 0.8,
+          Expanded(
+            child: Text(
+              title,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: Theme.of(context)
+                  .textTheme
+                  .titleMedium
+                  ?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: Theme.of(context)
+                    .colorScheme
+                    .primary,
+                letterSpacing: 0.8,
+              ),
             ),
           ),
         ],
