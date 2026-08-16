@@ -1,160 +1,138 @@
-ChordFlow 2
+# 🎸 ChordFlow 2
 
-ChordFlow 2 is a modern Flutter app for musicians, bands, worship teams and singers.
+**ChordFlow 2** is a modern Flutter application for musicians, bands, singers and worship teams.
 
-The app combines song and chord management, setlists, performance tools, PDF export, local storage, Firebase Authentication and Gemini-powered AI assistance in one responsive application.
+It combines song and chord management, live performance tools, setlists, PDF export, offline storage and Gemini-powered AI assistance in one responsive application.
 
-Highlights
+Built with **Flutter, Dart, Firebase and Gemini AI**.
 
-Modern Flutter + Material 3 interface
+---
 
-Responsive layout for phone, tablet, web and desktop
+## 📱 Screenshots
 
-Light and dark mode
+> Screenshots in screenshots map.
 
-Firebase Authentication
+---
 
-Firebase App Check
+## ✨ Key Features
 
-Firebase AI Logic with Gemini
+### 🎵 Song Management
+- Create and edit songs
+- ChordPro support
+- Live chord transposition
+- Genres and tags
+- Favorites
+- Smart search
+- Recently played songs
+- Most played songs
+- ChordPro import/export
 
-Local Hive storage
+### 🎸 Live Performance
+- Performance Mode
+- Setlist Performance Mode
+- Auto-scroll
+- Live transpose
+- Setlists
+- Responsive interface for phone and tablet
 
-ChordPro support
+### 🤖 ChordFlow AI
+Powered by **Firebase AI Logic + Gemini**.
 
-Live transpose
+ChordFlow AI can:
 
-Performance Mode
+- Suggest better song keys
+- Give vocal range advice
+- Recommend capo positions
+- Suggest alternative chords
+- Analyse chord progressions
+- Generate intro and outro ideas
+- Create piano accompaniment ideas
+- Simplify chords for beginners
+- Summarize songs
+- Translate lyrics while preserving chord markers where possible
+- Answer questions about the current song
 
-Setlists
+The application also includes:
 
-Auto-scroll
+- AI Assistant
+- AI Chat
+- Conversation memory during the active chat
+- AI Quick Actions
+- Favorite AI prompts
+- Copy AI results
+- Create a new song from an AI result
+- Replace the current song with an AI result
 
-Favorites
+---
 
-Recently played songs
+## 💾 Storage & Export
 
-Most played songs
+ChordFlow 2 supports:
 
-Genres and tags
+- Local Hive storage
+- JSON backup and restore
+- ChordPro import/export
+- Song PDF export
+- Setlist PDF export
 
-Smart search
+Core songbook functionality remains available locally when cloud features are unavailable.
 
-PDF export
+---
 
-ChordPro import/export
+## 🔐 Firebase
 
-JSON backup and restore
+ChordFlow 2 uses:
 
-AI Assistant
+- Firebase Core
+- Firebase Authentication
+- Firebase App Check
+- Firebase AI Logic
+- Gemini
 
-AI Chat with conversation memory
+---
 
-AI Quick Actions
+## 🛠️ Tech Stack
 
-Favorite AI prompts
-
-AI-generated key, capo, vocal and chord advice
-
-AI intro/outro generation
-
-Copy AI results
-
-Create a new song from an AI result
-
-Replace the current song with an AI result
-
-AI Features
-
-ChordFlow AI can help musicians with tasks such as:
-
-Suggesting a better key
-
-Giving vocal range advice
-
-Giving capo advice
-
-Suggesting alternative chords
-
-Generating an intro
-
-Generating an outro
-
-Summarizing a song
-
-Simplifying chords for beginners
-
-Creating piano accompaniment ideas
-
-Analysing chord progressions
-
-Translating lyrics while preserving chord markers where possible
-
-Answering free-form questions about the current song
-
-The AI Chat keeps the context of the current song and remembers previous messages within the active chat session.
-
-Main Screens
-
-Authentication
-
-Home
-
-Song Editor
-
-Song Viewer
-
-Performance Mode
-
-Setlists
-
-Setlist Performance Mode
-
-Settings
-
-AI Assistant
-
-AI Chat
-
-Tech Stack
-
-Flutter
-
-Dart
-
-Material 3
-
-Hive
-
-Shared Preferences
-
-Firebase Core
-
-Firebase Authentication
-
-Firebase App Check
-
-Firebase AI Logic
-
-Gemini
-
-Google Fonts
-
-PDF
-
-Printing
-
-File Picker
-
-Share Plus
-
-Project Structure
-
+- Flutter
+- Dart
+- Material 3
+- Firebase
+- Gemini AI
+- Hive
+- Shared Preferences
+- Google Fonts
+- PDF / Printing
+- File Picker
+- Share Plus
+
+---
+
+## 🖥️ Main Screens
+
+- Authentication
+- Home
+- Song Editor
+- Song Viewer
+- Performance Mode
+- Setlists
+- Setlist Performance Mode
+- Settings
+- AI Assistant
+- AI Chat
+
+---
+
+## 🧱 Architecture
+
+The project separates the application into models, screens, services, utilities and reusable widgets.
+
+```text
 lib/
 ├── models/
 │   ├── ai_prompt.dart
 │   ├── setlist.dart
 │   └── song.dart
+│
 ├── screens/
 │   ├── ai_assistant_screen.dart
 │   ├── ai_chat_screen.dart
@@ -166,6 +144,7 @@ lib/
 │   ├── settings_screen.dart
 │   ├── song_editor_screen.dart
 │   └── song_viewer_screen.dart
+│
 ├── services/
 │   ├── ai_prompt_service.dart
 │   ├── ai_service.dart
@@ -179,125 +158,16 @@ lib/
 │   ├── song_pdf_service.dart
 │   ├── storage_service.dart
 │   └── theme_service.dart
+│
 ├── utils/
 │   ├── chord_transposer.dart
 │   └── chordpro_parser.dart
+│
 ├── widgets/
 │   ├── chord_line.dart
 │   ├── chord_lyric_line.dart
 │   ├── live_song_preview.dart
 │   └── song_card.dart
+│
 ├── firebase_options.dart
 └── main.dart
-
-ChordPro Example
-
-{title: Amazing Grace}
-{artist: Traditional}
-{key: G}
-{tempo: 72}
-{time: 4/4}
-
-{start_of_verse: Verse 1}
-[G]Amazing [C]grace
-How [G]sweet the [D]sound
-{end_of_verse}
-
-Getting Started
-
-Clone the repository:
-
-git clone https://github.com/EraKoeks/ChordFlow-2.git
-cd ChordFlow-2
-
-Install packages:
-
-flutter pub get
-
-Check the project:
-
-flutter analyze
-
-Run the app:
-
-flutter run
-
-Firebase Setup
-
-ChordFlow 2 uses Firebase Authentication, App Check and Firebase AI Logic.
-
-For your own fork:
-
-flutterfire configure
-
-Then configure:
-
-Firebase Authentication
-
-App Check
-
-Firebase AI Logic
-
-Gemini Developer API or another supported Firebase AI provider
-
-Use your own Firebase project configuration.
-
-Local Storage
-
-Songs, setlists and AI prompt favorites are stored locally with Hive.
-
-The application is designed to keep core songbook functionality available even when cloud features are unavailable.
-
-Backup and Export
-
-ChordFlow 2 supports:
-
-JSON backup
-
-JSON restore
-
-ChordPro import
-
-ChordPro export
-
-Song PDF export
-
-Setlist PDF export
-
-Android Release
-
-The Android application ID is:
-
-com.erakoeks.chordflow2
-
-Create a release build with:
-
-flutter build appbundle --release
-
-or:
-
-flutter build apk --release
-
-Never commit your keystore or android/key.properties.
-
-Roadmap
-
-Full multi-device cloud sync
-
-Persisted AI chat history
-
-Shared setlists
-
-More AI arranging tools
-
-Additional accessibility improvements
-
-Developer
-
-Built by Eithrick Koeks with Flutter and Dart.
-
-GitHub: EraKoeks
-
-Status
-
-ChordFlow 2 is an active portfolio project and release candidate.
