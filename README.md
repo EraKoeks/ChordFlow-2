@@ -10,13 +10,24 @@ Built with **Flutter, Dart, Firebase and Gemini AI**.
 
 ## 📱 Screenshots
 
-> Screenshots in screenshots map.
+<p align="center">
+  <img src="screenshots/home.png" width="250" alt="ChordFlow Home">
+  <img src="screenshots/song_viewer.png" width="250" alt="Song Viewer">
+  <img src="screenshots/performance.png" width="250" alt="Performance Mode">
+</p>
+
+<p align="center">
+  <img src="screenshots/setlists.png" width="250" alt="Setlists">
+  <img src="screenshots/ai_assistant.png" width="250" alt="AI Assistant">
+  <img src="screenshots/ai_chat.png" width="250" alt="AI Chat">
+</p>
 
 ---
 
 ## ✨ Key Features
 
 ### 🎵 Song Management
+
 - Create and edit songs
 - ChordPro support
 - Live chord transposition
@@ -28,6 +39,7 @@ Built with **Flutter, Dart, Firebase and Gemini AI**.
 - ChordPro import/export
 
 ### 🎸 Live Performance
+
 - Performance Mode
 - Setlist Performance Mode
 - Auto-scroll
@@ -36,6 +48,7 @@ Built with **Flutter, Dart, Firebase and Gemini AI**.
 - Responsive interface for phone and tablet
 
 ### 🤖 ChordFlow AI
+
 Powered by **Firebase AI Logic + Gemini**.
 
 ChordFlow AI can:
@@ -171,3 +184,37 @@ lib/
 │
 ├── firebase_options.dart
 └── main.dart
+```
+
+---
+
+## 🚀 Project Goal
+
+ChordFlow 2 was built as a portfolio project to demonstrate the development of a complete Flutter application with local storage, Firebase integration, AI functionality, responsive UI and tools designed for real-world use.
+
+The project demonstrates experience with:
+
+- Flutter application architecture
+- State and data management
+- Local persistent storage
+- Firebase integration
+- Authentication
+- AI integration with Gemini
+- File import and export
+- PDF generation
+- Responsive Flutter UI
+- Building reusable widgets and services
+
+---
+
+## 📌 Status
+
+ChordFlow 2 is actively developed and may receive additional improvements and features.
+
+---
+
+## 👨‍💻 Developer
+
+Developed by **Eithrick Koeks**
+
+Flutter / Dart Developer
