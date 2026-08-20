@@ -11,15 +11,14 @@ Built with **Flutter, Dart, Firebase and Gemini AI**.
 ## 📱 Screenshots
 
 <p align="center">
-  <img src="screenshots/home.png" width="250" alt="ChordFlow Home">
-  <img src="screenshots/song_viewer.png" width="250" alt="Song Viewer">
-  <img src="screenshots/performance.png" width="250" alt="Performance Mode">
+  <img src="screenshots/home.jpg" width="250" alt="ChordFlow Home">
+  <img src="screenshots/song.jpg" width="250" alt="Song Editor">
+  <img src="screenshots/songviewer.jpg" width="250" alt="Song Viewer">
 </p>
 
 <p align="center">
-  <img src="screenshots/setlists.png" width="250" alt="Setlists">
-  <img src="screenshots/ai_assistant.png" width="250" alt="AI Assistant">
-  <img src="screenshots/ai_chat.png" width="250" alt="AI Chat">
+  <img src="screenshots/setlist.jpg" width="250" alt="Setlists">
+  <img src="screenshots/ai_assistent.jpg" width="250" alt="AI Assistant">
 </p>
 
 ---
